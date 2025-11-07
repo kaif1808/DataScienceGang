@@ -4,7 +4,7 @@
 # Creates 4-year averages for merged_data with overlapping cycles
 
 library(data.table)
-source("data_cleaning/utils.R")
+source("data_cleaning/01_utils.R")
 
 create_4yr_averages_pipeline <- function(merged_data) {
   # Preserve original merged_data before averaging

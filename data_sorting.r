@@ -4,27 +4,29 @@
 # Main data processing pipeline that processes and merges multiple datasets
 # This script now uses modular functions from the data_cleaning/ directory for better organization
 #
-# For the modular version, see data_cleaning/main.R
+# For the modular version, see data_cleaning/10_main.R
 # Individual processing functions are available in:
-#   - data_cleaning/process_rayyaan.R
-#   - data_cleaning/process_amaani.R
-#   - data_cleaning/load_ellie.R
-#   - data_cleaning/merge_datasets.R
-#   - data_cleaning/create_4yr_averages.R
-#   - data_cleaning/load_medals.R
-#   - data_cleaning/merge_medals.R
+#   - data_cleaning/01_utils.R
+#   - data_cleaning/02_process_rayyaan.R
+#   - data_cleaning/03_process_amaani.R
+#   - data_cleaning/04_load_ellie.R
+#   - data_cleaning/05_merge_datasets.R
+#   - data_cleaning/06_create_4yr_averages.R
+#   - data_cleaning/07_load_medals.R
+#   - data_cleaning/08_merge_medals.R
+#   - data_cleaning/09_compare_countries.R (optional diagnostics)
 
 library(data.table)
 
-# Source all module scripts
-source("data_cleaning/utils.R")
-source("data_cleaning/process_rayyaan.R")
-source("data_cleaning/process_amaani.R")
-source("data_cleaning/load_ellie.R")
-source("data_cleaning/merge_datasets.R")
-source("data_cleaning/create_4yr_averages.R")
-source("data_cleaning/load_medals.R")
-source("data_cleaning/merge_medals.R")
+# Source all module scripts in pipeline order
+source("data_cleaning/01_utils.R")
+source("data_cleaning/02_process_rayyaan.R")
+source("data_cleaning/03_process_amaani.R")
+source("data_cleaning/04_load_ellie.R")
+source("data_cleaning/05_merge_datasets.R")
+source("data_cleaning/06_create_4yr_averages.R")
+source("data_cleaning/07_load_medals.R")
+source("data_cleaning/08_merge_medals.R")
 
 # ==============================================================================
 # Run Pipeline
