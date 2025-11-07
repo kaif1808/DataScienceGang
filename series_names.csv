@@ -1,0 +1,15 @@
+Series Name,Series_Name_clean
+Access to electricity (% of population),elec_access_percent
+"Contraceptive prevalence, any method (% of married women ages 15-49)",contraceptive_percent_married
+Electric power consumption (kWh per capita),elec_kwh_per_capita
+Energy use (kg of oil equivalent per capita),energy_oil_equiv_kg_per_capita
+Gross capital formation (% of GDP),gross_cap_form_gdp
+Individuals using the Internet (% of population),internet_access_percent
+Military expenditure (% of GDP),mil_expenditure_percent
+Mobile cellular subscriptions (per 100 people),mobile_sub_per100
+Political Stability and Absence of Violence/Terrorism: Estimate,pol_stability_estimate
+Political Stability and Absence of Violence/Terrorism: Standard Error,pol_stability_std
+Poverty headcount ratio at national poverty lines (% of population),poverty_ratio
+"Revenue, excluding grants (% of GDP)",revenue_of_GDP.
+Urban population (% of total population),urban_percentage
+Urban population growth (annual %),urban_growth
