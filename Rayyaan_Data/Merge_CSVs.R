@@ -55,5 +55,3 @@ all_data <- all_data %>% filter(Year >= 2009)
 
 # --- Save clean, stacked data ---
 write_csv(all_data, "merged_data_clean.csv")
-
-print("✅ Clean merged file saved as merged_data_clean.csv")
