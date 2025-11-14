@@ -54,4 +54,6 @@ medals <- load_medals()
 merged_data <- merge_medals(merged_data, medals)
 
 # Final merged_data is now available in the environment
-merged_data <- merged_data[ !is.na(total)]
+#merged_data <- merged_data[ !is.na(total)]
+
+# ==================================================
