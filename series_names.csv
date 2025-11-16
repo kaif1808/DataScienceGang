@@ -4,12 +4,20 @@ Access to electricity (% of population),elec_access_percent
 Electric power consumption (kWh per capita),elec_kwh_per_capita
 Energy use (kg of oil equivalent per capita),energy_oil_equiv_kg_per_capita
 Gross capital formation (% of GDP),gross_cap_form_gdp
+Gross capital formation (current US$),gross_cap_form_usd
+Gross fixed capital formation (% of GDP),gross_fixed_cap_form_gdp
+Gross fixed capital formation (current US$),gross_fixed_cap_form_usd
 Individuals using the Internet (% of population),internet_access_percent
 Military expenditure (% of GDP),mil_expenditure_percent
+Military expenditure (current USD),mil_expenditure_usd
 Mobile cellular subscriptions (per 100 people),mobile_sub_per100
+Multidimensional poverty headcount ratio (UNDP) (% of population),poverty_multidim_undp
 Political Stability and Absence of Violence/Terrorism: Estimate,pol_stability_estimate
 Political Stability and Absence of Violence/Terrorism: Standard Error,pol_stability_std
+Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),poverty_3dollar_ppp
 Poverty headcount ratio at national poverty lines (% of population),poverty_ratio
 "Revenue, excluding grants (% of GDP)",revenue_of_GDP.
+Social contributions (% of revenue),social_contrib_percent
+Tax revenue (% of GDP),tax_revenue_gdp
 Urban population (% of total population),urban_percentage
 Urban population growth (annual %),urban_growth

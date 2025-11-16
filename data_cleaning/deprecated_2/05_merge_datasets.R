@@ -6,8 +6,16 @@
 library(data.table)
 
 merge_datasets <- function(rayyaan_wide, amaani_wide, ellie_wide) {
-  # Standardize column names: rename Country to Country Name in rayyaan_wide
-  setnames(rayyaan_wide, "Country", "Country Name")
+  # Standardize column names if older files used "Country"
+  if ("Country" %in% names(rayyaan_wide)) {
+    setnames(rayyaan_wide, "Country", "Country Name")
+  }
+  if ("Country" %in% names(amaani_wide)) {
+    setnames(amaani_wide, "Country", "Country Name")
+  }
+  if ("Country" %in% names(ellie_wide)) {
+    setnames(ellie_wide, "Country", "Country Name")
+  }
   
   # Merge all three datasets by Country Name and Year
   # Start with rayyaan_wide, then merge amaani_wide, then ellie_wide
