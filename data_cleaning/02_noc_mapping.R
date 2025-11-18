@@ -54,7 +54,7 @@ library(stringr)
 # - Select relevant columns: Country name, IOC (NOC) code, ISO code
 # - Filter out entries with missing NOC or ISO codes
 # - Trim whitespace and limit ISO codes to first 3 characters (standard format)
-noc_iso_mapping <- fread("../data/ISO_NOC_codes.csv") |>
+noc_iso_mapping <- fread("data/ISO_NOC_codes.csv") |>
    as_tibble() |>
    select(Country, IOC, ISO) |>
    filter(!is.na(IOC), !is.na(ISO)) |>
@@ -67,7 +67,7 @@ noc_iso_mapping <- fread("../data/ISO_NOC_codes.csv") |>
 # Load historical NOC-ISO mapping
 # - Similar processing to current mapping
 # - Both IOC and ISO codes are limited to 3 characters (historical data may have variations)
-noc_iso_mapping_old <- fread("../data/ISO_NOC_codes_old.csv") |>
+noc_iso_mapping_old <- fread("data/ISO_NOC_codes_old.csv") |>
   as_tibble() |>
   select(Country, IOC, ISO) |>
   filter(!is.na(IOC), !is.na(ISO)) |>
@@ -91,7 +91,7 @@ noc_iso_all <- bind_rows(noc_iso_mapping, noc_iso_mapping_old) |>
 # -----------------------------------------------------------------------------
 
 # Define file paths for manual override and related files
-manual_map_path <- "../data/country_manual_overrides.csv"
+manual_map_path <- "data/country_manual_overrides.csv"
 
 # Load manual country mapping overrides
 # - If the file exists, read it

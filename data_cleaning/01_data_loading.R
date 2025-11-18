@@ -27,7 +27,7 @@ library(readr)
 # Load source tables ----------------------------------------------------------
 # -----------------------------------------------------------------------------
 
-olympic_windows <- fread("../data/pre_medal.csv") |> as_tibble()
-medals <- fread("../data/Olympic_Medal_Tally_History.csv") |> as_tibble()
-paris_medals_raw <- fread("../2024olympics/medals_total.csv") |> as_tibble()
-paris_nocs <- fread("../2024olympics/nocs.csv") |> as_tibble()  # All participating countries
+olympic_windows <- fread("data/pre_medal.csv") |> as_tibble()
+medals <- fread("data/Olympic_Medal_Tally_History.csv") |> as_tibble()
+paris_medals_raw <- fread("2024olympics/medals_total.csv") |> as_tibble()
+paris_nocs <- fread("2024olympics/nocs.csv") |> as_tibble()  # All participating countries
