@@ -217,7 +217,6 @@ def preprocess_and_impute_fold(train_df, test_df):
         df['stroke'] = df['stroke'].astype(int)
         df['hypertension'] = df['hypertension'].astype(int)
         df['heart_disease'] = df['heart_disease'].astype(int)
-
         # BMI Missing Flag
         df['BMI_Missing_Flag'] = df['bmi'].isna()
 
@@ -238,5 +237,7 @@ def preprocess_and_impute_fold(train_df, test_df):
     # 4. Add composite risk features to both
     imputed_train_df = create_composite_risk_features(imputed_train_df)
     imputed_test_df = create_composite_risk_features(imputed_test_df)
-
+    #I want to drop 'id' and 'smoking_status_encoded' columns after creating composite features
+    imputed_train_df = imputed_train_df.drop(['id', 'smoking_status_encoded'], axis=1, errors='ignore')
+    imputed_test_df = imputed_test_df.drop(['id', 'smoking_status_encoded'], axis=1, errors='ignore')
     return imputed_train_df, imputed_test_df
